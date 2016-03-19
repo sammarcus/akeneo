@@ -5,7 +5,15 @@
 // read http://symfony.com/doc/current/book/installation.html#configuration-and-setup for more information
 //umask(0000);
 
+
+// This script changes the memory_limit value. Please visit https://wiki.bitnami.com/Applications/Bitnami_Akeneo to learn more about how to change this setting.
+ini_set('memory_limit','800M');
+$memory_limit = ini_get('memory_limit');
+if(php_sapi_name() == 'cli') {
+    echo "\033[0;33mThis script is running with a memory_limit of $memory_limit. Please visit https://wiki.bitnami.com/Applications/Bitnami_Akeneo to learn more about how to change this setting.\n\033[0m";
+}
 set_time_limit(0);
+                            
 
 require_once __DIR__.'/bootstrap.php.cache';
 require_once __DIR__.'/AppKernel.php';
