@@ -1,0 +1,15 @@
+users:
+    admin:
+        username: user
+        password: bitnami
+        email: 'admin@example.com'
+        firstname: UserName LastName
+        lastname:
+        catalog_locale: en_US
+        catalog_scope: ecommerce
+        default_tree: master
+        roles:
+            - ROLE_ADMINISTRATOR
+        groups:
+            - IT support
+        enable: true
