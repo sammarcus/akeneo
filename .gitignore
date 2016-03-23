@@ -14,7 +14,6 @@ app/uploads/product/*
 app/file_storage/*
 app/bootstrap.php.cache
 build/
-vendor
 bin
 composer.phar
 composer.lock
